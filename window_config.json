@@ -1,0 +1,66 @@
+{
+    "Explorateur de fichiers": {
+        "x": 3648,
+        "y": 0,
+        "width": 743,
+        "height": 703,
+        "app_name": "Explorateur de fichiers",
+        "original_title": "Explorateur de fichiers"
+    },
+    "Discord": {
+        "x": 0,
+        "y": 0,
+        "width": 1464,
+        "height": 696,
+        "app_name": "Discord",
+        "original_title": "Discord"
+    },
+    "SteelSeries GG": {
+        "x": 0,
+        "y": 696,
+        "width": 1464,
+        "height": 768,
+        "app_name": "steelseries gg",
+        "original_title": "SteelSeries GG"
+    },
+    "WhatsApp": {
+        "x": 3648,
+        "y": 696,
+        "width": 743,
+        "height": 703,
+        "app_name": "whatsapp",
+        "original_title": "WhatsApp"
+    },
+    "Messenger": {
+        "x": 4377,
+        "y": 696,
+        "width": 750,
+        "height": 703,
+        "app_name": "messenger",
+        "original_title": "Messenger"
+    },
+    "Mobile connect\u00e9": {
+        "x": 4377,
+        "y": 696,
+        "width": 750,
+        "height": 703,
+        "app_name": "Mobile connect",
+        "original_title": "Mobile connect\u00e9"
+    },
+    "One Calendar": {
+        "x": 4377,
+        "y": 0,
+        "width": 750,
+        "height": 703,
+        "app_name": "one calendar",
+        "original_title": "One Calendar"
+    },
+    "Spotify": {
+        "x": 0,
+        "y": 0,
+        "width": 1464,
+        "height": 696,
+        "app_name": "spotify",
+        "original_title": "Spotify"
+    }
+}
