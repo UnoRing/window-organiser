@@ -1,72 +1,30 @@
-2025-06-05 12:31:51,930 - === New Organization Process Started ===
-2025-06-05 12:31:51,930 - === New Organization Process Started ===
-2025-06-05 12:31:51,931 - UI is ready
-2025-06-05 12:31:51,931 - Starting organization process...
-2025-06-05 12:31:54,949 - Starting window organization
-2025-06-05 12:31:54,949 - Processing: Explorateur de fichiers
-2025-06-05 12:31:54,949 - Attempting to launch Explorateur de fichiers (original title: Explorateur de fichiers)
-2025-06-05 12:31:54,949 - Launch attempt 1 with method: <lambda>
-2025-06-05 12:31:55,568 - Current windows after launch attempt: ['Planificateur de tâches', 'C:\\WINDOWS\\system32\\cmd.exe', 'Messenger', 'organizer_process.log - window-organiser - Cursor', 'Expérience d’entrée Windows', 'Program Manager']
-2025-06-05 12:31:56,569 - Window appeared after 1s with title: Explorateur de fichiers
-2025-06-05 12:31:57,571 - Window appeared after 1s
-2025-06-05 12:31:57,572 - Positioned: Explorateur de fichiers
-2025-06-05 12:31:57,572 - Success for app: Explorateur de fichiers
-2025-06-05 12:31:57,572 - Processing: Discord
-2025-06-05 12:31:57,573 - Attempting to launch Discord (original title: Discord)
-2025-06-05 12:31:57,573 - Launch attempt 1 with method: <lambda>
-2025-06-05 12:31:58,603 - Current windows after launch attempt: ['Overwolf Quick Launcher', 'VTableHolderWndProc', 'Planificateur de tâches', 'C:\\WINDOWS\\system32\\cmd.exe', 'Overwolf', 'Accueil : Explorateur de fichiers', 'League of Legends', 'Messenger', 'organizer_process.log - window-organiser - Cursor', 'Expérience d’entrée Windows', 'Program Manager']
-2025-06-05 12:31:59,616 - Window appeared after 1s with title: Discord
-2025-06-05 12:32:00,628 - Window appeared after 1s
-2025-06-05 12:32:00,655 - Positioned: Discord
-2025-06-05 12:32:00,656 - Success for app: Discord
-2025-06-05 12:32:00,656 - Processing: SteelSeries GG
-2025-06-05 12:32:00,657 - Attempting to launch steelseries gg (original title: SteelSeries GG)
-2025-06-05 12:32:00,657 - Launch attempt 1 with method: <lambda>
-2025-06-05 12:32:02,054 - Current windows after launch attempt: ['Overwolf Quick Launcher', 'C:\\WINDOWS\\system32\\cmd.exe', 'discord.com/app?_=1749119519765 - Discord', 'Planificateur de tâches', 'Overwolf', 'Accueil : Explorateur de fichiers', 'League of Legends', 'Messenger', 'organizer_process.log - window-organiser - Cursor', 'Expérience d’entrée Windows', 'Program Manager']
-2025-06-05 12:32:03,079 - Available windows while waiting: ['Overwolf Quick Launcher', 'Amis - Discord', 'Planificateur de tâches', 'Overwolf', 'Accueil : Explorateur de fichiers', 'League of Legends', 'Messenger', 'organizer_process.log - window-organiser - Cursor', 'Expérience d’entrée Windows', 'Program Manager']
-2025-06-05 12:32:03,079 - Waiting... (1/10)
-2025-06-05 12:32:04,096 - Window appeared after 2s with title: SteelSeries GG
-2025-06-05 12:32:05,251 - Window appeared after 1s
-2025-06-05 12:32:05,261 - Positioned: SteelSeries GG
-2025-06-05 12:32:05,263 - Success for app: SteelSeries GG
-2025-06-05 12:32:05,263 - Processing: WhatsApp
-2025-06-05 12:32:05,270 - Attempting to launch whatsapp (original title: WhatsApp)
-2025-06-05 12:32:05,270 - Launch attempt 1 with method: <lambda>
-2025-06-05 12:32:06,645 - Current windows after launch attempt: ['Overwolf Quick Launcher', 'SteelSeries GG', 'Amis - Discord', 'Planificateur de tâches', 'Overwolf', 'Accueil : Explorateur de fichiers', 'League of Legends', 'Messenger', 'organizer_process.log - window-organiser - Cursor', 'Expérience d’entrée Windows', 'Program Manager']
-2025-06-05 12:32:07,645 - Window appeared after 1s with title: WhatsApp
-2025-06-05 12:32:08,647 - Window appeared after 1s
-2025-06-05 12:32:08,651 - Positioned: WhatsApp
-2025-06-05 12:32:08,651 - Success for app: WhatsApp
-2025-06-05 12:32:08,651 - Processing: Mobile connecté
-2025-06-05 12:32:08,653 - Attempting to launch Mobile connect (original title: Mobile connecté)
-2025-06-05 12:32:08,653 - Launch attempt 1 with method: <lambda>
-2025-06-05 12:32:09,395 - Current windows after launch attempt: ['Overwolf Quick Launcher', 'C:\\WINDOWS\\system32\\cmd.exe', 'SteelSeries GG', 'WhatsApp', 'Amis - Discord', 'Planificateur de tâches', 'Overwolf', 'Accueil : Explorateur de fichiers', 'League of Legends', 'Messenger', 'organizer_process.log - window-organiser - Cursor', 'Expérience d’entrée Windows', 'Program Manager']
-2025-06-05 12:32:10,440 - Available windows while waiting: ['Overwolf Quick Launcher', 'League of Legends', 'SteelSeries GG', 'WhatsApp', 'Amis - Discord', 'Planificateur de tâches', 'Overwolf', 'Accueil : Explorateur de fichiers', 'Messenger', 'organizer_process.log - window-organiser - Cursor', 'Expérience d’entrée Windows', 'Program Manager']
-2025-06-05 12:32:10,440 - Waiting... (1/10)
-2025-06-05 12:32:11,444 - Waiting... (2/10)
-2025-06-05 12:32:12,452 - Waiting... (3/10)
-2025-06-05 12:32:13,455 - Window appeared after 4s with title: Mobile connecté
-2025-06-05 12:32:14,456 - Window appeared after 1s
-2025-06-05 12:32:14,456 - Positioned: Mobile connecté
-2025-06-05 12:32:14,456 - Success for app: Mobile connecté
-2025-06-05 12:32:14,456 - Processing: One Calendar
-2025-06-05 12:32:14,458 - Attempting to launch one calendar (original title: One Calendar)
-2025-06-05 12:32:14,458 - Launch attempt 1 with method: <lambda>
-2025-06-05 12:32:15,116 - Current windows after launch attempt: ['GameOverlay', 'Overwolf Quick Launcher', 'League of Legends', 'C:\\WINDOWS\\system32\\cmd.exe', 'Mobile connecté', 'SteelSeries GG', 'WhatsApp', 'Amis - Discord', 'Planificateur de tâches', 'Overwolf', 'Accueil : Explorateur de fichiers', 'Messenger', 'organizer_process.log - window-organiser - Cursor', 'Expérience d’entrée Windows', 'Program Manager']
-2025-06-05 12:32:16,118 - Window appeared after 1s with title: One Calendar
-2025-06-05 12:32:17,120 - Window appeared after 1s
-2025-06-05 12:32:17,122 - Positioned: One Calendar
-2025-06-05 12:32:17,122 - Success for app: One Calendar
-2025-06-05 12:32:17,122 - Processing: Spotify
-2025-06-05 12:32:17,122 - Attempting to launch spotify (original title: Spotify)
-2025-06-05 12:32:17,122 - Launch attempt 1 with method: <lambda>
-2025-06-05 12:32:17,738 - Current windows after launch attempt: ['GameOverlay', 'League of Legends', 'C:\\WINDOWS\\system32\\cmd.exe', 'One Calendar', 'Mobile connecté', 'SteelSeries GG', 'WhatsApp', 'Amis - Discord', 'Planificateur de tâches', 'Overwolf', 'Accueil : Explorateur de fichiers', 'Messenger', 'organizer_process.log - window-organiser - Cursor', 'Expérience d’entrée Windows', 'Program Manager']
-2025-06-05 12:32:18,740 - Window appeared after 1s with title: Spotify
-2025-06-05 12:32:19,741 - Window appeared after 1s
-2025-06-05 12:32:19,743 - Positioned: Spotify
-2025-06-05 12:32:19,744 - Success for app: Spotify
-2025-06-05 12:32:19,744 - Processing: Messenger
-2025-06-05 12:32:19,744 - position_only set for Messenger: will not launch, just wait for window (up to 30s)
-2025-06-05 12:32:19,747 - Positioned: Messenger
-2025-06-05 12:32:19,748 - Success for app: Messenger
-2025-06-05 12:32:24,770 - Organization process completed. Success: 8/8
+2025-06-05 14:31:03,203 - === New Organization Process Started ===
+2025-06-05 14:31:03,203 - === New Organization Process Started ===
+2025-06-05 14:31:03,203 - UI is ready
+2025-06-05 14:31:03,203 - Starting organization process...
+2025-06-05 14:31:06,226 - Starting window organization
+2025-06-05 14:31:06,227 - Processing: Explorateur de fichiers
+2025-06-05 14:31:06,228 - Positioned: Explorateur de fichiers
+2025-06-05 14:31:06,228 - Success for app: Explorateur de fichiers
+2025-06-05 14:31:06,228 - Processing: Discord
+2025-06-05 14:31:06,229 - Positioned: Discord
+2025-06-05 14:31:06,229 - Success for app: Discord
+2025-06-05 14:31:06,229 - Processing: SteelSeries GG
+2025-06-05 14:31:06,230 - Positioned: SteelSeries GG
+2025-06-05 14:31:06,230 - Success for app: SteelSeries GG
+2025-06-05 14:31:06,230 - Processing: WhatsApp
+2025-06-05 14:31:06,230 - Positioned: WhatsApp
+2025-06-05 14:31:06,230 - Success for app: WhatsApp
+2025-06-05 14:31:06,230 - Processing: Mobile connecté
+2025-06-05 14:31:06,231 - Positioned: Mobile connecté
+2025-06-05 14:31:06,231 - Success for app: Mobile connecté
+2025-06-05 14:31:06,231 - Processing: One Calendar
+2025-06-05 14:31:06,231 - Positioned: One Calendar
+2025-06-05 14:31:06,231 - Success for app: One Calendar
+2025-06-05 14:31:06,231 - Processing: Spotify
+2025-06-05 14:31:06,232 - Positioned: Spotify
+2025-06-05 14:31:06,232 - Success for app: Spotify
+2025-06-05 14:31:06,232 - Processing: Messenger
+2025-06-05 14:31:06,232 - Positioned: Messenger
+2025-06-05 14:31:06,233 - Success for app: Messenger
+2025-06-05 14:31:11,250 - Organization process completed. Success: 8/8

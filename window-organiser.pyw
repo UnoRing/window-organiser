@@ -4,6 +4,8 @@ import traceback
 import time
 import ctypes
 from ctypes import wintypes
+import subprocess
+import shlex
 
 try:
     import pygetwindow as gw
@@ -92,27 +94,20 @@ try:
                 logger.error(f"Error loading config: {e}")
                 self.window_configs = {}
 
-        def launch_and_wait_for_window(self, title, app_name, original_title=None, max_attempts=10, delay=1):
+        def launch_and_wait_for_window(self, title, app_name, original_title=None, max_attempts=10, delay=1, opening_method=None):
             """Try to launch an app and wait for its window to appear."""
-            # Special handling for Messenger
-            if app_name.lower() == "messenger":
-                launch_methods = [
-                    # Try Microsoft Store app
-                    lambda: os.system('start shell:AppsFolder\Facebook.Messenger_8xx8rvfyw5nnt!Messenger'),
-                    # Try web app
-                    lambda: os.system('start ms-messenger://'),
-                    # Try direct URL
-                    lambda: os.system('start https://www.messenger.com/desktop'),
-                    # Try common app names
-                    lambda: AppOpener.open("Messenger for Desktop", match_closest=True),
-                    lambda: AppOpener.open("Facebook Messenger", match_closest=True),
-                    lambda: AppOpener.open("Messenger", match_closest=True),
-                    # Try with spaces and dashes
-                    lambda: AppOpener.open(app_name.replace(" ", "-"), match_closest=True),
-                    lambda: AppOpener.open(app_name.replace(" ", ""), match_closest=True),
-                    # Try direct app name
-                    lambda: AppOpener.open(app_name, match_closest=True)
-                ]
+            if opening_method:
+                logger.info(f"Launching {title} using custom opening_method: {opening_method}")
+                try:
+                    cmd_list = shlex.split(opening_method, posix=False)
+                    subprocess.Popen(cmd_list)
+                except Exception as e:
+                    logger.error(f"Failed to launch {title} with subprocess: {e}")
+                    return None
+                title_variations = [title]
+                if original_title:
+                    title_variations.append(original_title)
+                max_wait = max_attempts
             else:
                 launch_methods = [
                     lambda: AppOpener.open(app_name, match_closest=True),
@@ -120,49 +115,40 @@ try:
                     lambda: AppOpener.open(app_name.replace(" ", ""), match_closest=True),
                     lambda: os.system(f"start {app_name}")
                 ]
-            
-            logger.info(f"Attempting to launch {app_name} (original title: {original_title})")
-            for i, method in enumerate(launch_methods):
-                try:
-                    logger.info(f"Launch attempt {i+1} with method: {method.__name__ if hasattr(method, '__name__') else 'lambda'}")
-                    method()
-                    # Log all windows after launch attempt
-                    all_windows = gw.getAllWindows()
-                    window_titles = [w.title for w in all_windows if w.title]
-                    logger.info(f"Current windows after launch attempt: {window_titles}")
-                    break
-                except Exception as e:
-                    logger.warning(f"Launch attempt {i+1} failed: {e}")
-                    continue
-
-            # For Messenger, also try to match partial titles
-            if app_name.lower() == "messenger":
-                title_variations = [
-                    title,
-                    original_title,
-                    "Messenger",
-                    "Facebook Messenger",
-                    "Messenger for Desktop"
-                ]
-            else:
                 title_variations = [title]
                 if original_title:
                     title_variations.append(original_title)
-
-            for attempt in range(max_attempts):
+                logger.info(f"Attempting to launch {app_name} (original title: {original_title})")
+                launch_success = False
+                for i, method in enumerate(launch_methods):
+                    try:
+                        logger.info(f"Launch attempt {i+1} with method: {method.__name__ if hasattr(method, '__name__') else 'lambda'}")
+                        method()
+                        all_windows = gw.getAllWindows()
+                        window_titles = [w.title for w in all_windows if w.title]
+                        logger.info(f"Current windows after launch attempt: {window_titles}")
+                        launch_success = True
+                        break
+                    except Exception as e:
+                        logger.warning(f"Launch attempt {i+1} failed: {e}")
+                        continue
+                if not launch_success:
+                    logger.error(f"All launch attempts failed for {app_name}")
+                    return None
+                max_wait = max_attempts
+            for attempt in range(max_wait):
                 time.sleep(delay)
-                # Try all title variations
                 for title_var in title_variations:
                     windows = gw.getWindowsWithTitle(title_var)
                     if windows:
                         logger.info(f"Window appeared after {attempt + 1}s with title: {title_var}")
                         return windows[0]
-                # Log all windows while waiting
-                if attempt == 0:  # Only log once to avoid spam
+                if attempt == 0:
                     all_windows = gw.getAllWindows()
                     window_titles = [w.title for w in all_windows if w.title]
                     logger.info(f"Available windows while waiting: {window_titles}")
-                logger.info(f"Waiting... ({attempt + 1}/{max_attempts})")
+                logger.info(f"Waiting... ({attempt + 1}/{max_wait})")
+            logger.warning(f"Window did not appear after {max_wait} attempts")
             return None
 
         def position_window(self, window, config, title):
@@ -193,6 +179,7 @@ try:
                         windows = gw.getWindowsWithTitle(title)
                         position_only = config.get("position_only", False)
                         open_method = config.get("open_method", "")
+                        opening_method = config.get("opening_method", "")
                         if position_only:
                             logger.info(f"position_only set for {title}: will not launch, just wait for window (up to 30s)")
                             for attempt in range(30):
@@ -202,10 +189,15 @@ try:
                                 windows = gw.getWindowsWithTitle(title)
                                 logger.info(f"Waiting for window... ({attempt+1}/30)")
                         else:
-                            # Use open_method if specified
+                            # Use opening_method if specified
                             if not windows:
                                 window = None
-                                if open_method == "appopener":
+                                if opening_method:
+                                    window = self.launch_and_wait_for_window(
+                                        title, config["app_name"], config.get("original_title"),
+                                        opening_method=opening_method
+                                    )
+                                elif open_method == "appopener":
                                     try:
                                         AppOpener.open(config["app_name"], match_closest=True)
                                     except Exception as e:
