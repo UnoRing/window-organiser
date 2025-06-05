@@ -1,279 +1,279 @@
-2025-06-05 12:06:08,601 - === Starting Window Organizer Config ===
-2025-06-05 12:06:09,709 - Failed to import AppOpener: the JSON object must be str, bytes or bytearray, not NoneType
-2025-06-05 12:06:09,765 - Using fallback app detection method
-2025-06-05 12:06:10,148 - Successfully retrieved 271 apps (including web apps and common applications)
-2025-06-05 12:06:10,148 - 
+2025-06-05 14:42:43,724 - === Starting Window Organizer Config ===
+2025-06-05 14:42:44,261 - Failed to import AppOpener: the JSON object must be str, bytes or bytearray, not NoneType
+2025-06-05 14:42:44,305 - Using fallback app detection method
+2025-06-05 14:42:44,645 - Successfully retrieved 271 apps (including web apps and common applications)
+2025-06-05 14:42:44,645 - 
 === Available Apps ===
-2025-06-05 12:06:10,148 - - 3DEXPERIENCE Exchange for SOLIDWORKS
-2025-06-05 12:06:10,148 - - 3DEXPERIENCE Marketplace for SOLIDWORKS
-2025-06-05 12:06:10,148 - - AMD
-2025-06-05 12:06:10,148 - - AMD Chipset Software
-2025-06-05 12:06:10,148 - - AMD DVR64
-2025-06-05 12:06:10,148 - - AMD GPIO2 Driver
-2025-06-05 12:06:10,148 - - AMD Install Manager
-2025-06-05 12:06:10,148 - - AMD PPM Provisioning File Driver
-2025-06-05 12:06:10,148 - - AMD PSP Driver
-2025-06-05 12:06:10,148 - - AMD Ryzen Master
-2025-06-05 12:06:10,148 - - AMD SBxxx SMBus Driver
-2025-06-05 12:06:10,148 - - AMD Settings
-2025-06-05 12:06:10,148 - - AMD Software
-2025-06-05 12:06:10,148 - - AMD User Experience Program Installer
-2025-06-05 12:06:10,148 - - AMD WVR64
-2025-06-05 12:06:10,148 - - AMD_Chipset_Drivers
-2025-06-05 12:06:10,148 - - ARIA Engine v1.9.7.8
-2025-06-05 12:06:10,148 - - Ableton Live 10 Suite
-2025-06-05 12:06:10,148 - - ActionsMcpHost
-2025-06-05 12:06:10,148 - - AdvancedMicroDevicesInc-2
-2025-06-05 12:06:10,148 - - AutoHotkey
-2025-06-05 12:06:10,148 - - AutoHotkey 1.1.37.01
-2025-06-05 12:06:10,148 - - BCUninstaller
-2025-06-05 12:06:10,148 - - Backup
-2025-06-05 12:06:10,148 - - BakkesMod
-2025-06-05 12:06:10,148 - - BakkesMod version 3.0
-2025-06-05 12:06:10,148 - - Branding64
-2025-06-05 12:06:10,148 - - Browser for SQL Server 2019
-2025-06-05 12:06:10,148 - - CEF for SOLIDWORKS Applications
-2025-06-05 12:06:10,148 - - Cakewalk
-2025-06-05 12:06:10,148 - - CanonicalGroupLimited
-2025-06-05 12:06:10,148 - - Clair Obscur: Expedition 33
-2025-06-05 12:06:10,148 - - Common
-2025-06-05 12:06:10,148 - - Common Files
-2025-06-05 12:06:10,148 - - DIFX
-2025-06-05 12:06:10,148 - - DS4Windows
-2025-06-05 12:06:10,148 - - Decent Sampler
-2025-06-05 12:06:10,148 - - Decent Sampler 1.12.5.0
-2025-06-05 12:06:10,148 - - Discord
-2025-06-05 12:06:10,148 - - Display Pilot
-2025-06-05 12:06:10,148 - - Docker
-2025-06-05 12:06:10,148 - - Docker Desktop
-2025-06-05 12:06:10,148 - - Dungeon Defenders II
-2025-06-05 12:06:10,148 - - EA Games
-2025-06-05 12:06:10,148 - - EA app
-2025-06-05 12:06:10,148 - - EasyAntiCheat
-2025-06-05 12:06:10,148 - - EasyAntiCheat_EOS
-2025-06-05 12:06:10,148 - - Electronic Arts
-2025-06-05 12:06:10,148 - - Epic Games
-2025-06-05 12:06:10,148 - - Epic Games Launcher
-2025-06-05 12:06:10,148 - - Epic Games Launcher Prerequisites (x64)
-2025-06-05 12:06:10,148 - - Epic Online Services
-2025-06-05 12:06:10,148 - - Explorateur de fichiers
-2025-06-05 12:06:10,148 - - Fichiers communs
-2025-06-05 12:06:10,148 - - Firefox
-2025-06-05 12:06:10,148 - - Focusrite
-2025-06-05 12:06:10,148 - - Focusrite Audio Drivers 4.119.13.33
-2025-06-05 12:06:10,149 - - GameBarElevatedFT_Alias
-2025-06-05 12:06:10,149 - - Git
-2025-06-05 12:06:10,149 - - Google
-2025-06-05 12:06:10,149 - - Google Chrome
-2025-06-05 12:06:10,149 - - Google Drive
-2025-06-05 12:06:10,149 - - HidHide
-2025-06-05 12:06:10,149 - - Hyper-V
-2025-06-05 12:06:10,149 - - InstallShield Installation Information
-2025-06-05 12:06:10,149 - - IntelliJ IDEA Community Edition 2024.3.1
-2025-06-05 12:06:10,149 - - Internet Explorer
-2025-06-05 12:06:10,149 - - Java
-2025-06-05 12:06:10,149 - - JetBrains
-2025-06-05 12:06:10,149 - - LABS version 2.5.0
-2025-06-05 12:06:10,149 - - LGHUB
-2025-06-05 12:06:10,149 - - Launcher Prerequisites (x64)
-2025-06-05 12:06:10,149 - - Logi
-2025-06-05 12:06:10,149 - - Logitech
-2025-06-05 12:06:10,149 - - Logitech G HUB
-2025-06-05 12:06:10,149 - - MSBuild
-2025-06-05 12:06:10,149 - - MediaPlayer
-2025-06-05 12:06:10,149 - - Messenger
-2025-06-05 12:06:10,149 - - Microsoft
-2025-06-05 12:06:10,149 - - Microsoft .NET Host - 6.0.6 (x64)
-2025-06-05 12:06:10,149 - - Microsoft .NET Host - 8.0.0 (x64)
-2025-06-05 12:06:10,149 - - Microsoft .NET Host - 8.0.0 (x86)
-2025-06-05 12:06:10,149 - - Microsoft .NET Host FX Resolver - 6.0.6 (x64)
-2025-06-05 12:06:10,149 - - Microsoft .NET Host FX Resolver - 8.0.0 (x64)
-2025-06-05 12:06:10,149 - - Microsoft .NET Host FX Resolver - 8.0.0 (x86)
-2025-06-05 12:06:10,149 - - Microsoft .NET Runtime - 6.0.6 (x64)
-2025-06-05 12:06:10,149 - - Microsoft .NET Runtime - 8.0.0 (x64)
-2025-06-05 12:06:10,149 - - Microsoft .NET Runtime - 8.0.0 (x86)
-2025-06-05 12:06:10,149 - - Microsoft Build of OpenJDK  21.0.5+11 (x64)
-2025-06-05 12:06:10,149 - - Microsoft Edge
-2025-06-05 12:06:10,149 - - Microsoft Edge WebView2 Runtime
-2025-06-05 12:06:10,149 - - Microsoft ODBC Driver 17 for SQL Server
-2025-06-05 12:06:10,149 - - Microsoft OLE DB Driver for SQL Server
-2025-06-05 12:06:10,149 - - Microsoft Office
-2025-06-05 12:06:10,149 - - Microsoft Office 15
-2025-06-05 12:06:10,149 - - Microsoft Office Professional Plus 2021 - fr-fr
-2025-06-05 12:06:10,149 - - Microsoft OneDrive
-2025-06-05 12:06:10,149 - - Microsoft SQL Server
-2025-06-05 12:06:10,149 - - Microsoft SQL Server 2012 Native Client 
-2025-06-05 12:06:10,149 - - Microsoft SQL Server 2019 (64-bit)
-2025-06-05 12:06:10,149 - - Microsoft SQL Server 2019 RsFx Driver
-2025-06-05 12:06:10,149 - - Microsoft SQL Server 2019 Setup (English)
-2025-06-05 12:06:10,149 - - Microsoft SQL Server 2019 T-SQL Language Service 
-2025-06-05 12:06:10,149 - - Microsoft Teams Meeting Add-in for Microsoft Office
-2025-06-05 12:06:10,149 - - Microsoft Update Health Tools
-2025-06-05 12:06:10,149 - - Microsoft VSS Writer for SQL Server 2019
-2025-06-05 12:06:10,149 - - Microsoft Visual Basic for Applications 7.1 (x64)
-2025-06-05 12:06:10,149 - - Microsoft Visual Basic for Applications 7.1 (x64) English
-2025-06-05 12:06:10,149 - - Microsoft Visual Basic for Applications 7.1 (x64) French
-2025-06-05 12:06:10,149 - - Microsoft Visual C++ 2005 Redistributable (x64)
-2025-06-05 12:06:10,149 - - Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.6161
-2025-06-05 12:06:10,150 - - Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.6161
-2025-06-05 12:06:10,150 - - Microsoft Visual C++ 2010  x64 Redistributable - 10.0.40219
-2025-06-05 12:06:10,150 - - Microsoft Visual C++ 2010  x86 Redistributable - 10.0.40219
-2025-06-05 12:06:10,150 - - Microsoft Visual C++ 2012 Redistributable (x64) - 11.0.61030
-2025-06-05 12:06:10,150 - - Microsoft Visual C++ 2012 Redistributable (x86) - 11.0.61030
-2025-06-05 12:06:10,150 - - Microsoft Visual C++ 2012 x64 Additional Runtime - 11.0.61030
-2025-06-05 12:06:10,150 - - Microsoft Visual C++ 2012 x64 Minimum Runtime - 11.0.61030
-2025-06-05 12:06:10,150 - - Microsoft Visual C++ 2012 x86 Additional Runtime - 11.0.61030
-2025-06-05 12:06:10,150 - - Microsoft Visual C++ 2012 x86 Minimum Runtime - 11.0.61030
-2025-06-05 12:06:10,150 - - Microsoft Visual C++ 2013 Redistributable (x64) - 12.0.30501
-2025-06-05 12:06:10,150 - - Microsoft Visual C++ 2013 Redistributable (x86) - 12.0.30501
-2025-06-05 12:06:10,150 - - Microsoft Visual C++ 2013 x64 Additional Runtime - 12.0.21005
-2025-06-05 12:06:10,150 - - Microsoft Visual C++ 2013 x64 Minimum Runtime - 12.0.21005
-2025-06-05 12:06:10,150 - - Microsoft Visual C++ 2013 x86 Additional Runtime - 12.0.21005
-2025-06-05 12:06:10,150 - - Microsoft Visual C++ 2013 x86 Minimum Runtime - 12.0.21005
-2025-06-05 12:06:10,150 - - Microsoft Visual C++ 2015-2022 Redistributable (x64) - 14.42.34438
-2025-06-05 12:06:10,150 - - Microsoft Visual C++ 2015-2022 Redistributable (x86) - 14.42.34438
-2025-06-05 12:06:10,150 - - Microsoft Visual C++ 2022 X64 Additional Runtime - 14.42.34438
-2025-06-05 12:06:10,150 - - Microsoft Visual C++ 2022 X64 Minimum Runtime - 14.42.34438
-2025-06-05 12:06:10,150 - - Microsoft Visual C++ 2022 X86 Additional Runtime - 14.42.34438
-2025-06-05 12:06:10,150 - - Microsoft Visual C++ 2022 X86 Minimum Runtime - 14.42.34438
-2025-06-05 12:06:10,150 - - Microsoft Visual Studio 10
-2025-06-05 12:06:10,150 - - Microsoft Visual Studio Tools for Applications 2019
-2025-06-05 12:06:10,150 - - Microsoft Visual Studio Tools for Applications 2019 x64 Hosting Support
-2025-06-05 12:06:10,150 - - Microsoft Visual Studio Tools for Applications 2019 x86 Hosting Support
-2025-06-05 12:06:10,150 - - Microsoft Windows Desktop Runtime - 6.0.6 (x64)
-2025-06-05 12:06:10,150 - - Microsoft Windows Desktop Runtime - 8.0.0 (x64)
-2025-06-05 12:06:10,150 - - Microsoft Windows Desktop Runtime - 8.0.0 (x86)
-2025-06-05 12:06:10,150 - - MicrosoftWindows.Client
-2025-06-05 12:06:10,150 - - MicrosoftWindows.DesktopStickerEditorCentennial
-2025-06-05 12:06:10,150 - - Mixed In Key
-2025-06-05 12:06:10,150 - - Mobile connect
-2025-06-05 12:06:10,150 - - Mobile connecté
-2025-06-05 12:06:10,150 - - ModifiableWindowsApps
-2025-06-05 12:06:10,150 - - Mozilla Firefox
-2025-06-05 12:06:10,150 - - Mozilla Firefox (x64 fr)
-2025-06-05 12:06:10,150 - - Mozilla Maintenance Service
-2025-06-05 12:06:10,150 - - NVDA
-2025-06-05 12:06:10,150 - - NVDA 2024.4.2
-2025-06-05 12:06:10,150 - - NVIDIA Corporation
-2025-06-05 12:06:10,150 - - NVM for Windows 1.1.12
-2025-06-05 12:06:10,150 - - Nefarius Software Solutions
-2025-06-05 12:06:10,150 - - Netmarble
-2025-06-05 12:06:10,150 - - NeuralAmpModeler
-2025-06-05 12:06:10,150 - - NeuralAmpModeler version 0.7.12
-2025-06-05 12:06:10,150 - - Nmap
-2025-06-05 12:06:10,150 - - Nmap 7.95
-2025-06-05 12:06:10,150 - - Npcap
-2025-06-05 12:06:10,150 - - Office 16 Click-to-Run Extensibility Component
-2025-06-05 12:06:10,150 - - Office 16 Click-to-Run Licensing Component
-2025-06-05 12:06:10,150 - - Office 16 Click-to-Run Localization Component
-2025-06-05 12:06:10,150 - - One Calendar
-2025-06-05 12:06:10,150 - - Open Design Alliance
-2025-06-05 12:06:10,150 - - OpenAI
-2025-06-05 12:06:10,150 - - OpenRGB_0
-2025-06-05 12:06:10,150 - - Opera GX
-2025-06-05 12:06:10,150 - - Overwolf
-2025-06-05 12:06:10,150 - - Package de pilotes Windows - Microsoft USB Boot (02/22/2013 6.1.7600.16385)
-2025-06-05 12:06:10,150 - - Package de pilotes Windows - Sony Monitor  (01/01/2020 1.0.0.7)
-2025-06-05 12:06:10,151 - - Plogue
-2025-06-05 12:06:10,151 - - Plogue sforzando v1.978
-2025-06-05 12:06:10,151 - - Portrait Displays
-2025-06-05 12:06:10,151 - - PowerToys (Preview)
-2025-06-05 12:06:10,151 - - Promontory_GPIO Driver
-2025-06-05 12:06:10,151 - - PythonSoftwareFoundation.Python.3
-2025-06-05 12:06:10,151 - - Quick Share
-2025-06-05 12:06:10,151 - - Raspberry Pi Imager
-2025-06-05 12:06:10,151 - - Realtek
-2025-06-05 12:06:10,151 - - Realtek Audio Driver
-2025-06-05 12:06:10,151 - - Reference Assemblies
-2025-06-05 12:06:10,151 - - Riot Vanguard
-2025-06-05 12:06:10,151 - - RyzenMasterSDK
-2025-06-05 12:06:10,151 - - SOLIDWORKS 2023 French Resources
-2025-06-05 12:06:10,151 - - SOLIDWORKS 2023 SP02.1
-2025-06-05 12:06:10,151 - - SOLIDWORKS CAM 2023 SP02.1
-2025-06-05 12:06:10,151 - - SOLIDWORKS Composer 2023 SP02.1
-2025-06-05 12:06:10,151 - - SOLIDWORKS Corp
-2025-06-05 12:06:10,151 - - SOLIDWORKS Electrical 2023 SP02.1
-2025-06-05 12:06:10,151 - - SOLIDWORKS File Utilities 2023 SP02.1
-2025-06-05 12:06:10,151 - - SOLIDWORKS Flow Simulation 2023 SP02.1 
-2025-06-05 12:06:10,151 - - SOLIDWORKS Inspection 2023 SP02.1
-2025-06-05 12:06:10,151 - - SOLIDWORKS PCB 2023 SP02.1
-2025-06-05 12:06:10,151 - - SOLIDWORKS PDM
-2025-06-05 12:06:10,151 - - SOLIDWORKS Plastics 2023 SP02.1
-2025-06-05 12:06:10,151 - - SOLIDWORKS Visualize 2023 SP0.1
-2025-06-05 12:06:10,151 - - SOLIDWORKS Visualize Boost 2023 SP0.1
-2025-06-05 12:06:10,151 - - SOLIDWORKS eDrawings 2023 SP02.1
-2025-06-05 12:06:10,151 - - SQL Server 2019 Batch Parser
-2025-06-05 12:06:10,151 - - SQL Server 2019 Common Files
-2025-06-05 12:06:10,151 - - SQL Server 2019 Connection Info
-2025-06-05 12:06:10,151 - - SQL Server 2019 DMF
-2025-06-05 12:06:10,151 - - SQL Server 2019 Database Engine Services
-2025-06-05 12:06:10,151 - - SQL Server 2019 Database Engine Shared
-2025-06-05 12:06:10,151 - - SQL Server 2019 SQL Diagnostics
-2025-06-05 12:06:10,151 - - SQL Server 2019 Shared Management Objects
-2025-06-05 12:06:10,151 - - SQL Server 2019 Shared Management Objects Extensions
-2025-06-05 12:06:10,151 - - SQL Server 2019 XEvent
-2025-06-05 12:06:10,151 - - STAR WARST: Squadrons
-2025-06-05 12:06:10,151 - - Satellite
-2025-06-05 12:06:10,151 - - Sessions (32 bit)
-2025-06-05 12:06:10,151 - - Sessions (64 bit)
-2025-06-05 12:06:10,151 - - SnippingTool
-2025-06-05 12:06:10,151 - - Spotify
-2025-06-05 12:06:10,151 - - SpotifyAB
-2025-06-05 12:06:10,151 - - Steam
-2025-06-05 12:06:10,151 - - SteelSeries
-2025-06-05 12:06:10,151 - - SteelSeries GG
-2025-06-05 12:06:10,151 - - SteelSeries GG 88.0.0
-2025-06-05 12:06:10,151 - - Surge Synth Team
-2025-06-05 12:06:10,151 - - Surge XT
-2025-06-05 12:06:10,151 - - TeighaX 3.09
-2025-06-05 12:06:10,151 - - Temp
-2025-06-05 12:06:10,151 - - Ubisoft
-2025-06-05 12:06:10,151 - - Uninstall Information
-2025-06-05 12:06:10,151 - - ViGEm Bus Driver
-2025-06-05 12:06:10,151 - - VisualAssist
-2025-06-05 12:06:10,151 - - WPTx64
-2025-06-05 12:06:10,151 - - WSL
-2025-06-05 12:06:10,151 - - WhatsApp
-2025-06-05 12:06:10,151 - - Windows Defender
-2025-06-05 12:06:10,151 - - Windows Defender Advanced Threat Protection
-2025-06-05 12:06:10,151 - - Windows Kits
-2025-06-05 12:06:10,151 - - Windows Mail
-2025-06-05 12:06:10,151 - - Windows Media Player
-2025-06-05 12:06:10,151 - - Windows NT
-2025-06-05 12:06:10,151 - - Windows Photo Viewer
-2025-06-05 12:06:10,151 - - Windows Sidebar
-2025-06-05 12:06:10,151 - - Windows Subsystem for Linux
-2025-06-05 12:06:10,151 - - WindowsApps
-2025-06-05 12:06:10,151 - - WindowsPackageManagerServer
-2025-06-05 12:06:10,151 - - WindowsPowerShell
-2025-06-05 12:06:10,151 - - XboxPcAppAdminServer
-2025-06-05 12:06:10,151 - - XboxPcAppCE
-2025-06-05 12:06:10,151 - - chatgpt
-2025-06-05 12:06:10,151 - - cloudflared
-2025-06-05 12:06:10,151 - - cursor
-2025-06-05 12:06:10,151 - - desktop
-2025-06-05 12:06:10,151 - - dotnet
-2025-06-05 12:06:10,151 - - idle
-2025-06-05 12:06:10,151 - - idle3
-2025-06-05 12:06:10,152 - - idle3.12
-2025-06-05 12:06:10,152 - - launcherrsxruntimeuwp
-2025-06-05 12:06:10,152 - - messenger
-2025-06-05 12:06:10,152 - - mspaint
-2025-06-05 12:06:10,152 - - nodejs
-2025-06-05 12:06:10,152 - - olk
-2025-06-05 12:06:10,152 - - one calendar
-2025-06-05 12:06:10,152 - - pbrush
-2025-06-05 12:06:10,152 - - pip
-2025-06-05 12:06:10,152 - - pip3
-2025-06-05 12:06:10,152 - - pip3.12
-2025-06-05 12:06:10,152 - - pythonw
-2025-06-05 12:06:10,152 - - pythonw3
-2025-06-05 12:06:10,152 - - pythonw3.12
-2025-06-05 12:06:10,152 - - spotify
-2025-06-05 12:06:10,152 - - steelseries gg
-2025-06-05 12:06:10,152 - - ubuntu
-2025-06-05 12:06:10,152 - - whatsapp
-2025-06-05 12:06:10,152 - - winget
-2025-06-05 12:06:10,152 - - wt
-2025-06-05 12:06:10,152 - ====================
+2025-06-05 14:42:44,645 - - 3DEXPERIENCE Exchange for SOLIDWORKS
+2025-06-05 14:42:44,645 - - 3DEXPERIENCE Marketplace for SOLIDWORKS
+2025-06-05 14:42:44,645 - - AMD
+2025-06-05 14:42:44,645 - - AMD Chipset Software
+2025-06-05 14:42:44,645 - - AMD DVR64
+2025-06-05 14:42:44,645 - - AMD GPIO2 Driver
+2025-06-05 14:42:44,645 - - AMD Install Manager
+2025-06-05 14:42:44,645 - - AMD PPM Provisioning File Driver
+2025-06-05 14:42:44,645 - - AMD PSP Driver
+2025-06-05 14:42:44,645 - - AMD Ryzen Master
+2025-06-05 14:42:44,645 - - AMD SBxxx SMBus Driver
+2025-06-05 14:42:44,645 - - AMD Settings
+2025-06-05 14:42:44,645 - - AMD Software
+2025-06-05 14:42:44,645 - - AMD User Experience Program Installer
+2025-06-05 14:42:44,645 - - AMD WVR64
+2025-06-05 14:42:44,645 - - AMD_Chipset_Drivers
+2025-06-05 14:42:44,645 - - ARIA Engine v1.9.7.8
+2025-06-05 14:42:44,645 - - Ableton Live 10 Suite
+2025-06-05 14:42:44,645 - - ActionsMcpHost
+2025-06-05 14:42:44,645 - - AdvancedMicroDevicesInc-2
+2025-06-05 14:42:44,645 - - AutoHotkey
+2025-06-05 14:42:44,645 - - AutoHotkey 1.1.37.01
+2025-06-05 14:42:44,645 - - BCUninstaller
+2025-06-05 14:42:44,645 - - Backup
+2025-06-05 14:42:44,645 - - BakkesMod
+2025-06-05 14:42:44,646 - - BakkesMod version 3.0
+2025-06-05 14:42:44,646 - - Branding64
+2025-06-05 14:42:44,646 - - Browser for SQL Server 2019
+2025-06-05 14:42:44,646 - - CEF for SOLIDWORKS Applications
+2025-06-05 14:42:44,646 - - Cakewalk
+2025-06-05 14:42:44,646 - - CanonicalGroupLimited
+2025-06-05 14:42:44,646 - - Clair Obscur: Expedition 33
+2025-06-05 14:42:44,646 - - Common
+2025-06-05 14:42:44,646 - - Common Files
+2025-06-05 14:42:44,646 - - DIFX
+2025-06-05 14:42:44,646 - - DS4Windows
+2025-06-05 14:42:44,646 - - Decent Sampler
+2025-06-05 14:42:44,646 - - Decent Sampler 1.12.5.0
+2025-06-05 14:42:44,646 - - Discord
+2025-06-05 14:42:44,646 - - Display Pilot
+2025-06-05 14:42:44,646 - - Docker
+2025-06-05 14:42:44,646 - - Docker Desktop
+2025-06-05 14:42:44,646 - - Dungeon Defenders II
+2025-06-05 14:42:44,646 - - EA Games
+2025-06-05 14:42:44,646 - - EA app
+2025-06-05 14:42:44,646 - - EasyAntiCheat
+2025-06-05 14:42:44,646 - - EasyAntiCheat_EOS
+2025-06-05 14:42:44,646 - - Electronic Arts
+2025-06-05 14:42:44,646 - - Epic Games
+2025-06-05 14:42:44,646 - - Epic Games Launcher
+2025-06-05 14:42:44,646 - - Epic Games Launcher Prerequisites (x64)
+2025-06-05 14:42:44,646 - - Epic Online Services
+2025-06-05 14:42:44,646 - - Explorateur de fichiers
+2025-06-05 14:42:44,646 - - Fichiers communs
+2025-06-05 14:42:44,646 - - Firefox
+2025-06-05 14:42:44,646 - - Focusrite
+2025-06-05 14:42:44,646 - - Focusrite Audio Drivers 4.119.13.33
+2025-06-05 14:42:44,646 - - GameBarElevatedFT_Alias
+2025-06-05 14:42:44,646 - - Git
+2025-06-05 14:42:44,646 - - Google
+2025-06-05 14:42:44,646 - - Google Chrome
+2025-06-05 14:42:44,646 - - Google Drive
+2025-06-05 14:42:44,646 - - HidHide
+2025-06-05 14:42:44,646 - - Hyper-V
+2025-06-05 14:42:44,646 - - InstallShield Installation Information
+2025-06-05 14:42:44,646 - - IntelliJ IDEA Community Edition 2024.3.1
+2025-06-05 14:42:44,646 - - Internet Explorer
+2025-06-05 14:42:44,646 - - Java
+2025-06-05 14:42:44,646 - - JetBrains
+2025-06-05 14:42:44,646 - - LABS version 2.5.0
+2025-06-05 14:42:44,646 - - LGHUB
+2025-06-05 14:42:44,646 - - Launcher Prerequisites (x64)
+2025-06-05 14:42:44,646 - - Logi
+2025-06-05 14:42:44,646 - - Logitech
+2025-06-05 14:42:44,646 - - Logitech G HUB
+2025-06-05 14:42:44,646 - - MSBuild
+2025-06-05 14:42:44,646 - - MediaPlayer
+2025-06-05 14:42:44,646 - - Messenger
+2025-06-05 14:42:44,646 - - Microsoft
+2025-06-05 14:42:44,646 - - Microsoft .NET Host - 6.0.6 (x64)
+2025-06-05 14:42:44,646 - - Microsoft .NET Host - 8.0.0 (x64)
+2025-06-05 14:42:44,646 - - Microsoft .NET Host - 8.0.0 (x86)
+2025-06-05 14:42:44,646 - - Microsoft .NET Host FX Resolver - 6.0.6 (x64)
+2025-06-05 14:42:44,646 - - Microsoft .NET Host FX Resolver - 8.0.0 (x64)
+2025-06-05 14:42:44,647 - - Microsoft .NET Host FX Resolver - 8.0.0 (x86)
+2025-06-05 14:42:44,647 - - Microsoft .NET Runtime - 6.0.6 (x64)
+2025-06-05 14:42:44,647 - - Microsoft .NET Runtime - 8.0.0 (x64)
+2025-06-05 14:42:44,647 - - Microsoft .NET Runtime - 8.0.0 (x86)
+2025-06-05 14:42:44,647 - - Microsoft Build of OpenJDK  21.0.5+11 (x64)
+2025-06-05 14:42:44,647 - - Microsoft Edge
+2025-06-05 14:42:44,647 - - Microsoft Edge WebView2 Runtime
+2025-06-05 14:42:44,647 - - Microsoft ODBC Driver 17 for SQL Server
+2025-06-05 14:42:44,647 - - Microsoft OLE DB Driver for SQL Server
+2025-06-05 14:42:44,647 - - Microsoft Office
+2025-06-05 14:42:44,647 - - Microsoft Office 15
+2025-06-05 14:42:44,647 - - Microsoft Office Professional Plus 2021 - fr-fr
+2025-06-05 14:42:44,647 - - Microsoft OneDrive
+2025-06-05 14:42:44,647 - - Microsoft SQL Server
+2025-06-05 14:42:44,647 - - Microsoft SQL Server 2012 Native Client 
+2025-06-05 14:42:44,647 - - Microsoft SQL Server 2019 (64-bit)
+2025-06-05 14:42:44,647 - - Microsoft SQL Server 2019 RsFx Driver
+2025-06-05 14:42:44,647 - - Microsoft SQL Server 2019 Setup (English)
+2025-06-05 14:42:44,647 - - Microsoft SQL Server 2019 T-SQL Language Service 
+2025-06-05 14:42:44,647 - - Microsoft Teams Meeting Add-in for Microsoft Office
+2025-06-05 14:42:44,647 - - Microsoft Update Health Tools
+2025-06-05 14:42:44,647 - - Microsoft VSS Writer for SQL Server 2019
+2025-06-05 14:42:44,647 - - Microsoft Visual Basic for Applications 7.1 (x64)
+2025-06-05 14:42:44,647 - - Microsoft Visual Basic for Applications 7.1 (x64) English
+2025-06-05 14:42:44,647 - - Microsoft Visual Basic for Applications 7.1 (x64) French
+2025-06-05 14:42:44,647 - - Microsoft Visual C++ 2005 Redistributable (x64)
+2025-06-05 14:42:44,647 - - Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.6161
+2025-06-05 14:42:44,647 - - Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.6161
+2025-06-05 14:42:44,647 - - Microsoft Visual C++ 2010  x64 Redistributable - 10.0.40219
+2025-06-05 14:42:44,647 - - Microsoft Visual C++ 2010  x86 Redistributable - 10.0.40219
+2025-06-05 14:42:44,647 - - Microsoft Visual C++ 2012 Redistributable (x64) - 11.0.61030
+2025-06-05 14:42:44,647 - - Microsoft Visual C++ 2012 Redistributable (x86) - 11.0.61030
+2025-06-05 14:42:44,647 - - Microsoft Visual C++ 2012 x64 Additional Runtime - 11.0.61030
+2025-06-05 14:42:44,647 - - Microsoft Visual C++ 2012 x64 Minimum Runtime - 11.0.61030
+2025-06-05 14:42:44,647 - - Microsoft Visual C++ 2012 x86 Additional Runtime - 11.0.61030
+2025-06-05 14:42:44,647 - - Microsoft Visual C++ 2012 x86 Minimum Runtime - 11.0.61030
+2025-06-05 14:42:44,647 - - Microsoft Visual C++ 2013 Redistributable (x64) - 12.0.30501
+2025-06-05 14:42:44,647 - - Microsoft Visual C++ 2013 Redistributable (x86) - 12.0.30501
+2025-06-05 14:42:44,647 - - Microsoft Visual C++ 2013 x64 Additional Runtime - 12.0.21005
+2025-06-05 14:42:44,647 - - Microsoft Visual C++ 2013 x64 Minimum Runtime - 12.0.21005
+2025-06-05 14:42:44,647 - - Microsoft Visual C++ 2013 x86 Additional Runtime - 12.0.21005
+2025-06-05 14:42:44,647 - - Microsoft Visual C++ 2013 x86 Minimum Runtime - 12.0.21005
+2025-06-05 14:42:44,647 - - Microsoft Visual C++ 2015-2022 Redistributable (x64) - 14.42.34438
+2025-06-05 14:42:44,647 - - Microsoft Visual C++ 2015-2022 Redistributable (x86) - 14.42.34438
+2025-06-05 14:42:44,647 - - Microsoft Visual C++ 2022 X64 Additional Runtime - 14.42.34438
+2025-06-05 14:42:44,647 - - Microsoft Visual C++ 2022 X64 Minimum Runtime - 14.42.34438
+2025-06-05 14:42:44,647 - - Microsoft Visual C++ 2022 X86 Additional Runtime - 14.42.34438
+2025-06-05 14:42:44,647 - - Microsoft Visual C++ 2022 X86 Minimum Runtime - 14.42.34438
+2025-06-05 14:42:44,647 - - Microsoft Visual Studio 10
+2025-06-05 14:42:44,647 - - Microsoft Visual Studio Tools for Applications 2019
+2025-06-05 14:42:44,647 - - Microsoft Visual Studio Tools for Applications 2019 x64 Hosting Support
+2025-06-05 14:42:44,647 - - Microsoft Visual Studio Tools for Applications 2019 x86 Hosting Support
+2025-06-05 14:42:44,647 - - Microsoft Windows Desktop Runtime - 6.0.6 (x64)
+2025-06-05 14:42:44,647 - - Microsoft Windows Desktop Runtime - 8.0.0 (x64)
+2025-06-05 14:42:44,647 - - Microsoft Windows Desktop Runtime - 8.0.0 (x86)
+2025-06-05 14:42:44,647 - - MicrosoftWindows.Client
+2025-06-05 14:42:44,647 - - MicrosoftWindows.DesktopStickerEditorCentennial
+2025-06-05 14:42:44,647 - - Mixed In Key
+2025-06-05 14:42:44,647 - - Mobile connect
+2025-06-05 14:42:44,647 - - Mobile connecté
+2025-06-05 14:42:44,647 - - ModifiableWindowsApps
+2025-06-05 14:42:44,647 - - Mozilla Firefox
+2025-06-05 14:42:44,647 - - Mozilla Firefox (x64 fr)
+2025-06-05 14:42:44,647 - - Mozilla Maintenance Service
+2025-06-05 14:42:44,647 - - NVDA
+2025-06-05 14:42:44,647 - - NVDA 2024.4.2
+2025-06-05 14:42:44,647 - - NVIDIA Corporation
+2025-06-05 14:42:44,647 - - NVM for Windows 1.1.12
+2025-06-05 14:42:44,647 - - Nefarius Software Solutions
+2025-06-05 14:42:44,647 - - Netmarble
+2025-06-05 14:42:44,647 - - NeuralAmpModeler
+2025-06-05 14:42:44,647 - - NeuralAmpModeler version 0.7.12
+2025-06-05 14:42:44,647 - - Nmap
+2025-06-05 14:42:44,647 - - Nmap 7.95
+2025-06-05 14:42:44,647 - - Npcap
+2025-06-05 14:42:44,647 - - Office 16 Click-to-Run Extensibility Component
+2025-06-05 14:42:44,647 - - Office 16 Click-to-Run Licensing Component
+2025-06-05 14:42:44,647 - - Office 16 Click-to-Run Localization Component
+2025-06-05 14:42:44,647 - - One Calendar
+2025-06-05 14:42:44,648 - - Open Design Alliance
+2025-06-05 14:42:44,648 - - OpenAI
+2025-06-05 14:42:44,648 - - OpenRGB_0
+2025-06-05 14:42:44,648 - - Opera GX
+2025-06-05 14:42:44,648 - - Overwolf
+2025-06-05 14:42:44,648 - - Package de pilotes Windows - Microsoft USB Boot (02/22/2013 6.1.7600.16385)
+2025-06-05 14:42:44,648 - - Package de pilotes Windows - Sony Monitor  (01/01/2020 1.0.0.7)
+2025-06-05 14:42:44,648 - - Plogue
+2025-06-05 14:42:44,648 - - Plogue sforzando v1.978
+2025-06-05 14:42:44,648 - - Portrait Displays
+2025-06-05 14:42:44,648 - - PowerToys (Preview)
+2025-06-05 14:42:44,648 - - Promontory_GPIO Driver
+2025-06-05 14:42:44,648 - - PythonSoftwareFoundation.Python.3
+2025-06-05 14:42:44,648 - - Quick Share
+2025-06-05 14:42:44,648 - - Raspberry Pi Imager
+2025-06-05 14:42:44,648 - - Realtek
+2025-06-05 14:42:44,648 - - Realtek Audio Driver
+2025-06-05 14:42:44,648 - - Reference Assemblies
+2025-06-05 14:42:44,648 - - Riot Vanguard
+2025-06-05 14:42:44,648 - - RyzenMasterSDK
+2025-06-05 14:42:44,648 - - SOLIDWORKS 2023 French Resources
+2025-06-05 14:42:44,648 - - SOLIDWORKS 2023 SP02.1
+2025-06-05 14:42:44,648 - - SOLIDWORKS CAM 2023 SP02.1
+2025-06-05 14:42:44,648 - - SOLIDWORKS Composer 2023 SP02.1
+2025-06-05 14:42:44,648 - - SOLIDWORKS Corp
+2025-06-05 14:42:44,648 - - SOLIDWORKS Electrical 2023 SP02.1
+2025-06-05 14:42:44,648 - - SOLIDWORKS File Utilities 2023 SP02.1
+2025-06-05 14:42:44,648 - - SOLIDWORKS Flow Simulation 2023 SP02.1 
+2025-06-05 14:42:44,648 - - SOLIDWORKS Inspection 2023 SP02.1
+2025-06-05 14:42:44,648 - - SOLIDWORKS PCB 2023 SP02.1
+2025-06-05 14:42:44,648 - - SOLIDWORKS PDM
+2025-06-05 14:42:44,648 - - SOLIDWORKS Plastics 2023 SP02.1
+2025-06-05 14:42:44,648 - - SOLIDWORKS Visualize 2023 SP0.1
+2025-06-05 14:42:44,648 - - SOLIDWORKS Visualize Boost 2023 SP0.1
+2025-06-05 14:42:44,648 - - SOLIDWORKS eDrawings 2023 SP02.1
+2025-06-05 14:42:44,648 - - SQL Server 2019 Batch Parser
+2025-06-05 14:42:44,648 - - SQL Server 2019 Common Files
+2025-06-05 14:42:44,648 - - SQL Server 2019 Connection Info
+2025-06-05 14:42:44,648 - - SQL Server 2019 DMF
+2025-06-05 14:42:44,648 - - SQL Server 2019 Database Engine Services
+2025-06-05 14:42:44,648 - - SQL Server 2019 Database Engine Shared
+2025-06-05 14:42:44,648 - - SQL Server 2019 SQL Diagnostics
+2025-06-05 14:42:44,648 - - SQL Server 2019 Shared Management Objects
+2025-06-05 14:42:44,648 - - SQL Server 2019 Shared Management Objects Extensions
+2025-06-05 14:42:44,648 - - SQL Server 2019 XEvent
+2025-06-05 14:42:44,648 - - STAR WARST: Squadrons
+2025-06-05 14:42:44,648 - - Satellite
+2025-06-05 14:42:44,648 - - Sessions (32 bit)
+2025-06-05 14:42:44,648 - - Sessions (64 bit)
+2025-06-05 14:42:44,648 - - SnippingTool
+2025-06-05 14:42:44,648 - - Spotify
+2025-06-05 14:42:44,648 - - SpotifyAB
+2025-06-05 14:42:44,648 - - Steam
+2025-06-05 14:42:44,648 - - SteelSeries
+2025-06-05 14:42:44,648 - - SteelSeries GG
+2025-06-05 14:42:44,648 - - SteelSeries GG 88.0.0
+2025-06-05 14:42:44,648 - - Surge Synth Team
+2025-06-05 14:42:44,648 - - Surge XT
+2025-06-05 14:42:44,648 - - TeighaX 3.09
+2025-06-05 14:42:44,648 - - Temp
+2025-06-05 14:42:44,648 - - Ubisoft
+2025-06-05 14:42:44,648 - - Uninstall Information
+2025-06-05 14:42:44,648 - - ViGEm Bus Driver
+2025-06-05 14:42:44,648 - - VisualAssist
+2025-06-05 14:42:44,648 - - WPTx64
+2025-06-05 14:42:44,648 - - WSL
+2025-06-05 14:42:44,648 - - WhatsApp
+2025-06-05 14:42:44,648 - - Windows Defender
+2025-06-05 14:42:44,648 - - Windows Defender Advanced Threat Protection
+2025-06-05 14:42:44,648 - - Windows Kits
+2025-06-05 14:42:44,648 - - Windows Mail
+2025-06-05 14:42:44,648 - - Windows Media Player
+2025-06-05 14:42:44,648 - - Windows NT
+2025-06-05 14:42:44,649 - - Windows Photo Viewer
+2025-06-05 14:42:44,649 - - Windows Sidebar
+2025-06-05 14:42:44,649 - - Windows Subsystem for Linux
+2025-06-05 14:42:44,649 - - WindowsApps
+2025-06-05 14:42:44,649 - - WindowsPackageManagerServer
+2025-06-05 14:42:44,649 - - WindowsPowerShell
+2025-06-05 14:42:44,649 - - XboxPcAppAdminServer
+2025-06-05 14:42:44,649 - - XboxPcAppCE
+2025-06-05 14:42:44,649 - - chatgpt
+2025-06-05 14:42:44,649 - - cloudflared
+2025-06-05 14:42:44,649 - - cursor
+2025-06-05 14:42:44,649 - - desktop
+2025-06-05 14:42:44,649 - - dotnet
+2025-06-05 14:42:44,649 - - idle
+2025-06-05 14:42:44,649 - - idle3
+2025-06-05 14:42:44,649 - - idle3.12
+2025-06-05 14:42:44,649 - - launcherrsxruntimeuwp
+2025-06-05 14:42:44,649 - - messenger
+2025-06-05 14:42:44,649 - - mspaint
+2025-06-05 14:42:44,649 - - nodejs
+2025-06-05 14:42:44,649 - - olk
+2025-06-05 14:42:44,649 - - one calendar
+2025-06-05 14:42:44,649 - - pbrush
+2025-06-05 14:42:44,649 - - pip
+2025-06-05 14:42:44,649 - - pip3
+2025-06-05 14:42:44,649 - - pip3.12
+2025-06-05 14:42:44,649 - - pythonw
+2025-06-05 14:42:44,649 - - pythonw3
+2025-06-05 14:42:44,649 - - pythonw3.12
+2025-06-05 14:42:44,649 - - spotify
+2025-06-05 14:42:44,649 - - steelseries gg
+2025-06-05 14:42:44,649 - - ubuntu
+2025-06-05 14:42:44,649 - - whatsapp
+2025-06-05 14:42:44,649 - - winget
+2025-06-05 14:42:44,649 - - wt
+2025-06-05 14:42:44,649 - ====================
 

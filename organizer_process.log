@@ -1,30 +1,73 @@
-2025-06-05 14:31:03,203 - === New Organization Process Started ===
-2025-06-05 14:31:03,203 - === New Organization Process Started ===
-2025-06-05 14:31:03,203 - UI is ready
-2025-06-05 14:31:03,203 - Starting organization process...
-2025-06-05 14:31:06,226 - Starting window organization
-2025-06-05 14:31:06,227 - Processing: Explorateur de fichiers
-2025-06-05 14:31:06,228 - Positioned: Explorateur de fichiers
-2025-06-05 14:31:06,228 - Success for app: Explorateur de fichiers
-2025-06-05 14:31:06,228 - Processing: Discord
-2025-06-05 14:31:06,229 - Positioned: Discord
-2025-06-05 14:31:06,229 - Success for app: Discord
-2025-06-05 14:31:06,229 - Processing: SteelSeries GG
-2025-06-05 14:31:06,230 - Positioned: SteelSeries GG
-2025-06-05 14:31:06,230 - Success for app: SteelSeries GG
-2025-06-05 14:31:06,230 - Processing: WhatsApp
-2025-06-05 14:31:06,230 - Positioned: WhatsApp
-2025-06-05 14:31:06,230 - Success for app: WhatsApp
-2025-06-05 14:31:06,230 - Processing: Mobile connecté
-2025-06-05 14:31:06,231 - Positioned: Mobile connecté
-2025-06-05 14:31:06,231 - Success for app: Mobile connecté
-2025-06-05 14:31:06,231 - Processing: One Calendar
-2025-06-05 14:31:06,231 - Positioned: One Calendar
-2025-06-05 14:31:06,231 - Success for app: One Calendar
-2025-06-05 14:31:06,231 - Processing: Spotify
-2025-06-05 14:31:06,232 - Positioned: Spotify
-2025-06-05 14:31:06,232 - Success for app: Spotify
-2025-06-05 14:31:06,232 - Processing: Messenger
-2025-06-05 14:31:06,232 - Positioned: Messenger
-2025-06-05 14:31:06,233 - Success for app: Messenger
-2025-06-05 14:31:11,250 - Organization process completed. Success: 8/8
+2025-06-05 14:42:02,500 - === New Organization Process Started ===
+2025-06-05 14:42:02,500 - === New Organization Process Started ===
+2025-06-05 14:42:02,500 - UI is ready
+2025-06-05 14:42:02,500 - Starting organization process...
+2025-06-05 14:42:05,518 - Starting window organization
+2025-06-05 14:42:05,518 - Processing: Explorateur de fichiers
+2025-06-05 14:42:05,518 - Attempting to launch Explorateur de fichiers (original title: Explorateur de fichiers)
+2025-06-05 14:42:05,518 - Launch attempt 1 with method: <lambda>
+2025-06-05 14:42:06,029 - Current windows after launch attempt: ['Planificateur de tâches', 'C:\\WINDOWS\\system32\\cmd.exe', 'window_config.json - window-organiser - Cursor', 'How to run an app/PWA and windows start - Microsoft Community - Google Chrome', 'Expérience d’entrée Windows', 'Program Manager']
+2025-06-05 14:42:07,030 - Window appeared after 1s with title: Explorateur de fichiers
+2025-06-05 14:42:08,031 - Window appeared after 1s
+2025-06-05 14:42:08,031 - Positioned: Explorateur de fichiers
+2025-06-05 14:42:08,031 - Success for app: Explorateur de fichiers
+2025-06-05 14:42:08,031 - Processing: Discord
+2025-06-05 14:42:08,031 - Attempting to launch Discord (original title: Discord)
+2025-06-05 14:42:08,031 - Launch attempt 1 with method: <lambda>
+2025-06-05 14:42:08,579 - Current windows after launch attempt: ['Planificateur de tâches', 'C:\\WINDOWS\\system32\\cmd.exe', 'Accueil : Explorateur de fichiers', 'window_config.json - window-organiser - Cursor', 'How to run an app/PWA and windows start - Microsoft Community - Google Chrome', 'Expérience d’entrée Windows', 'Program Manager']
+2025-06-05 14:42:09,580 - Window appeared after 1s with title: Discord
+2025-06-05 14:42:10,582 - Window appeared after 1s
+2025-06-05 14:42:10,582 - Failed to position Discord: Error code from Windows: 1400 - Handle de fenêtre non valide.
+2025-06-05 14:42:10,583 - Error processing window Discord: Error code from Windows: 1400 - Handle de fenêtre non valide.
+2025-06-05 14:42:10,583 - Processing: SteelSeries GG
+2025-06-05 14:42:10,583 - Attempting to launch steelseries gg (original title: SteelSeries GG)
+2025-06-05 14:42:10,583 - Launch attempt 1 with method: <lambda>
+2025-06-05 14:42:11,263 - Current windows after launch attempt: ['C:\\WINDOWS\\system32\\cmd.exe', 'organizer_process.log - window-organiser - Cursor', 'discord.com/app?_=1749127329382 - Discord', 'Planificateur de tâches', 'Accueil : Explorateur de fichiers', 'How to run an app/PWA and windows start - Microsoft Community - Google Chrome', 'Expérience d’entrée Windows', 'Program Manager']
+2025-06-05 14:42:12,272 - Available windows while waiting: ['organizer_process.log - window-organiser - Cursor', 'Amis - Discord', 'Planificateur de tâches', 'Accueil : Explorateur de fichiers', 'How to run an app/PWA and windows start - Microsoft Community - Google Chrome', 'Expérience d’entrée Windows', 'Program Manager']
+2025-06-05 14:42:12,272 - Waiting... (1/10)
+2025-06-05 14:42:13,278 - Window appeared after 2s with title: SteelSeries GG
+2025-06-05 14:42:14,279 - Window appeared after 1s
+2025-06-05 14:42:14,283 - Positioned: SteelSeries GG
+2025-06-05 14:42:14,283 - Success for app: SteelSeries GG
+2025-06-05 14:42:14,283 - Processing: WhatsApp
+2025-06-05 14:42:14,283 - Attempting to launch whatsapp (original title: WhatsApp)
+2025-06-05 14:42:14,283 - Launch attempt 1 with method: <lambda>
+2025-06-05 14:42:14,951 - Current windows after launch attempt: ['C:\\WINDOWS\\system32\\cmd.exe', 'organizer_process.log - window-organiser - Cursor', 'SteelSeries GG', 'Amis - Discord', 'Planificateur de tâches', 'Accueil : Explorateur de fichiers', 'How to run an app/PWA and windows start - Microsoft Community - Google Chrome', 'Expérience d’entrée Windows', 'Program Manager']
+2025-06-05 14:42:15,952 - Window appeared after 1s with title: WhatsApp
+2025-06-05 14:42:16,953 - Window appeared after 1s
+2025-06-05 14:42:16,956 - Positioned: WhatsApp
+2025-06-05 14:42:16,958 - Success for app: WhatsApp
+2025-06-05 14:42:16,958 - Processing: Mobile connecté
+2025-06-05 14:42:16,959 - Attempting to launch Mobile connect (original title: Mobile connecté)
+2025-06-05 14:42:16,959 - Launch attempt 1 with method: <lambda>
+2025-06-05 14:42:17,601 - Current windows after launch attempt: ['C:\\WINDOWS\\system32\\cmd.exe', 'organizer_process.log - window-organiser - Cursor', 'WhatsApp', 'SteelSeries GG', 'Amis - Discord', 'Planificateur de tâches', 'Accueil : Explorateur de fichiers', 'How to run an app/PWA and windows start - Microsoft Community - Google Chrome', 'Expérience d’entrée Windows', 'Program Manager']
+2025-06-05 14:42:18,603 - Available windows while waiting: ['organizer_process.log - window-organiser - Cursor', 'SplashScreen loading', 'WhatsApp', 'SteelSeries GG', 'Amis - Discord', 'Planificateur de tâches', 'Accueil : Explorateur de fichiers', 'How to run an app/PWA and windows start - Microsoft Community - Google Chrome', 'Expérience d’entrée Windows', 'Program Manager']
+2025-06-05 14:42:18,603 - Waiting... (1/10)
+2025-06-05 14:42:19,605 - Waiting... (2/10)
+2025-06-05 14:42:20,606 - Window appeared after 3s with title: Mobile connecté
+2025-06-05 14:42:21,606 - Window appeared after 1s
+2025-06-05 14:42:21,607 - Positioned: Mobile connecté
+2025-06-05 14:42:21,607 - Success for app: Mobile connecté
+2025-06-05 14:42:21,607 - Processing: One Calendar
+2025-06-05 14:42:21,607 - Attempting to launch one calendar (original title: One Calendar)
+2025-06-05 14:42:21,607 - Launch attempt 1 with method: <lambda>
+2025-06-05 14:42:22,153 - Current windows after launch attempt: ['C:\\WINDOWS\\system32\\cmd.exe', 'organizer_process.log - window-organiser - Cursor', 'Mobile connecté', 'WhatsApp', 'SteelSeries GG', 'Amis - Discord', 'Planificateur de tâches', 'Accueil : Explorateur de fichiers', 'How to run an app/PWA and windows start - Microsoft Community - Google Chrome', 'Expérience d’entrée Windows', 'Program Manager']
+2025-06-05 14:42:23,155 - Window appeared after 1s with title: One Calendar
+2025-06-05 14:42:24,156 - Window appeared after 1s
+2025-06-05 14:42:24,181 - Positioned: One Calendar
+2025-06-05 14:42:24,181 - Success for app: One Calendar
+2025-06-05 14:42:24,181 - Processing: Spotify
+2025-06-05 14:42:24,181 - Attempting to launch spotify (original title: Spotify)
+2025-06-05 14:42:24,181 - Launch attempt 1 with method: <lambda>
+2025-06-05 14:42:24,819 - Current windows after launch attempt: ['C:\\WINDOWS\\system32\\cmd.exe', 'organizer_process.log - window-organiser - Cursor', 'One Calendar', 'Mobile connecté', 'WhatsApp', 'SteelSeries GG', 'Amis - Discord', 'Planificateur de tâches', 'Accueil : Explorateur de fichiers', 'How to run an app/PWA and windows start - Microsoft Community - Google Chrome', 'Expérience d’entrée Windows', 'Program Manager']
+2025-06-05 14:42:25,821 - Window appeared after 1s with title: Spotify
+2025-06-05 14:42:26,823 - Window appeared after 1s
+2025-06-05 14:42:26,823 - Positioned: Spotify
+2025-06-05 14:42:26,823 - Success for app: Spotify
+2025-06-05 14:42:26,823 - Processing: Messenger
+2025-06-05 14:42:26,824 - Launching Messenger using custom opening_method: C:\Program Files (x86)\Microsoft\Edge\Application\msedge_proxy.exe --profile-directory=Default --app-id=bbdeiblfgdokhlblpgeaokenkfknecgl --app-url=https://www.messenger.com/?ref=homescreenpwa&__pwa=1 --app-run-on-os-login-mode=windowed --app-launch-source=
+2025-06-05 14:42:27,828 - Window appeared after 1s with title: Messenger
+2025-06-05 14:42:28,828 - Window appeared after 1s
+2025-06-05 14:42:28,835 - Positioned: Messenger
+2025-06-05 14:42:28,835 - Success for app: Messenger
+2025-06-05 14:42:33,852 - Organization process completed. Success: 7/8
