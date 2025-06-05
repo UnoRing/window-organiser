@@ -5,31 +5,60 @@ import json
 import os
 import logging
 import time
-import AppOpener
+import subprocess
+import locale
+
+# Setup logging first, before any other imports
+def setup_initial_logging():
+    """Initialize logging before any other operations"""
+    log_file = 'organizer_config.log'
+    
+    # Clear existing log file
+    with open(log_file, 'w', encoding='utf-8') as f:
+        f.write('')  # Clear the file
+        
+    logging.basicConfig(
+        filename=log_file,
+        level=logging.INFO,
+        format='%(asctime)s - %(message)s',
+        encoding='utf-8'
+    )
+    return logging.getLogger("OrganizerConfig")
+
+# Initialize logger first
+logger = setup_initial_logging()
+logger.info("=== Starting Window Organizer Config ===")
+
+# Now try to import AppOpener
+try:
+    import AppOpener
+    APP_OPENER_AVAILABLE = True
+    logger.info("Successfully imported AppOpener")
+except Exception as e:
+    logger.warning(f"Failed to import AppOpener: {e}")
+    APP_OPENER_AVAILABLE = False
 
 class WindowOrganizer:
     def __init__(self):
-        self.setup_logging()
+        self.logger = logger  # Use the already initialized logger
         self.setup_config()
         self.setup_gui()
+        # Get and log available apps at startup
+        self.available_apps = self.get_installed_apps()
+        self.logger.info("\n=== Available Apps ===")
+        for app in sorted(self.available_apps):
+            self.logger.info(f"- {app}")
+        self.logger.info("====================\n")
         self.refresh_all()
+        # Update status bar with app count
+        self.status_var.set(f"Ready - {len(self.available_apps)} apps available")
 
     def setup_logging(self):
-        """Initialize logging"""
-        log_file = 'organizer_config.log'
-        
-        # Clear existing log file
-        with open(log_file, 'w', encoding='utf-8') as f:
-            f.write('')  # Clear the file
-            
-        logging.basicConfig(
-            filename=log_file,
-            level=logging.INFO,
-            format='%(asctime)s - %(message)s',
-            encoding='utf-8'
-        )
-        self.logger = logging.getLogger("OrganizerConfig")
+        """Use the already initialized logger"""
+        self.logger = logger
         self.logger.info("=== New Configuration Session Started ===")
+        if not APP_OPENER_AVAILABLE:
+            self.logger.warning("AppOpener is not available - using fallback mechanism")
 
     def setup_config(self):
         self.config_file = "window_config.json"
@@ -245,8 +274,13 @@ class WindowOrganizer:
                               height=30)
         status_frame.grid(row=3, column=0, columnspan=2, sticky='ew', pady=(20, 0))
         
+        # Create a frame for the status text and app count
+        status_content = tk.Frame(status_frame, bg=self.colors['bg_light'])
+        status_content.pack(side='left', fill='x', expand=True)
+        
+        # Status text
         self.status_var = tk.StringVar(value="Ready")
-        status_bar = tk.Label(status_frame,
+        status_bar = tk.Label(status_content,
                             textvariable=self.status_var,
                             font=self.status_font,
                             bg=self.colors['bg_light'],
@@ -254,6 +288,25 @@ class WindowOrganizer:
                             padx=10,
                             pady=5)
         status_bar.pack(side='left')
+        
+        # App count label
+        self.app_count_var = tk.StringVar()
+        app_count_label = tk.Label(status_content,
+                                 textvariable=self.app_count_var,
+                                 font=self.status_font,
+                                 bg=self.colors['bg_light'],
+                                 fg=self.colors['text_secondary'],
+                                 padx=10,
+                                 pady=5)
+        app_count_label.pack(side='right')
+        
+        # Update app count
+        self.update_app_count()
+
+    def update_app_count(self):
+        """Update the app count display"""
+        if hasattr(self, 'available_apps'):
+            self.app_count_var.set(f"Apps: {len(self.available_apps)}")
 
     def load_config(self):
         """Load the configuration file"""
@@ -292,13 +345,10 @@ class WindowOrganizer:
 
     def get_window_info(self, window):
         """Get window information and clean app name"""
-        # Get base app name and clean it
         app_name = window.title.split(" - ")[0].strip()
-        
-        # Common app name mappings
         app_mappings = {
             "WhatsApp": "whatsapp",
-            "Amis": "discord",  # Discord window title
+            "Amis": "discord",
             "Discord": "discord",
             "Google Chrome": "chrome",
             "Mozilla Firefox": "firefox",
@@ -311,25 +361,22 @@ class WindowOrganizer:
             "File Explorer": "explorer",
             "Messenger": "messenger",
             "SteelSeries GG": "steelseries-gg",
-            "Mobile connecté": "Mobile connect",  # Updated mapping for Your Phone app
-            "Your Phone": "phone",       # English version
-            "Phone Link": "phone",       # Alternative name
-            # Add more mappings as needed
+            "Mobile connecté": "Mobile connect",
+            "Your Phone": "phone",
+            "Phone Link": "phone",
         }
-        
-        # Try to match the app name
         clean_app_name = app_mappings.get(app_name, app_name.lower())
-        
         self.logger.info(f"Original title: {window.title}")
         self.logger.info(f"Cleaned app name: {clean_app_name}")
-        
         return {
             "x": window.left,
             "y": window.top,
             "width": window.width,
             "height": window.height,
             "app_name": clean_app_name,
-            "original_title": window.title  # Save original title for matching
+            "original_title": window.title,
+            "position_only": False,
+            "open_method": ""
         }
 
     def refresh_windows(self):
@@ -357,7 +404,6 @@ class WindowOrganizer:
         if not selections:
             self.status_var.set("Please select one or more windows first.")
             return
-
         saved_count = 0
         for selection in selections:
             window_title = self.window_listbox.get(selection)
@@ -365,13 +411,17 @@ class WindowOrganizer:
             if not windows:
                 self.logger.warning(f"Could not find window: {window_title}")
                 continue
-
             window_info = self.get_window_info(windows[0])
             if window_info:
                 self.logger.info(f"Saving window info: {window_info}")
+                # If already exists, preserve position_only and open_method if present
+                existing = self.window_configs.get(window_title, {})
+                if "position_only" in existing:
+                    window_info["position_only"] = existing["position_only"]
+                if "open_method" in existing:
+                    window_info["open_method"] = existing["open_method"]
                 self.window_configs[window_title] = window_info
                 saved_count += 1
-
         self.logger.info(f"Saving {saved_count} windows to config")
         self.save_config()
         self.refresh_all()
@@ -396,7 +446,7 @@ class WindowOrganizer:
     def apply_layouts(self):
         """Apply all saved window layouts"""
         # Get list of available apps from AppOpener
-        available_apps = AppOpener.give_appnames()
+        available_apps = self.get_installed_apps()
         self.logger.info(f"Available apps: {available_apps}")
 
         for title, config in self.window_configs.items():
@@ -454,6 +504,105 @@ class WindowOrganizer:
                     self.logger.error(f"Failed to position {title}: {e}")
             else:
                 self.logger.warning(f"Could not find window: {title}")
+
+    def get_installed_apps(self):
+        """Get list of installed apps using AppOpener or fallback mechanism"""
+        if APP_OPENER_AVAILABLE:
+            try:
+                apps = AppOpener.get_apps()
+                self.logger.info(f"Successfully retrieved {len(apps)} apps from AppOpener")
+                return apps
+            except Exception as e:
+                self.logger.error(f"Error getting apps from AppOpener: {e}")
+                return self._get_installed_apps_fallback()
+        else:
+            self.logger.info("Using fallback app detection method")
+            return self._get_installed_apps_fallback()
+
+    def _get_installed_apps_fallback(self):
+        """Enhanced method to get installed apps including web apps and common locations"""
+        apps = set()  # Use a set to avoid duplicates
+        
+        try:
+            # 1. Get apps from registry (both 32-bit and 64-bit)
+            cmd = ["powershell", "-Command", 
+                  "$apps = @(); " +
+                  "$apps += Get-ItemProperty HKLM:\\Software\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\* | " +
+                  "Select-Object DisplayName | Where-Object DisplayName -ne $null; " +
+                  "$apps += Get-ItemProperty HKLM:\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\* | " +
+                  "Select-Object DisplayName | Where-Object DisplayName -ne $null; " +
+                  "$apps | Sort-Object DisplayName -Unique | ConvertTo-Json"]
+            
+            result = subprocess.run(cmd, capture_output=True, text=True, encoding=locale.getpreferredencoding())
+            
+            if result.returncode == 0 and result.stdout:
+                try:
+                    registry_apps = json.loads(result.stdout)
+                    if isinstance(registry_apps, list):
+                        apps.update(app.get('DisplayName', '') for app in registry_apps if app.get('DisplayName'))
+                    elif isinstance(registry_apps, dict):
+                        if registry_apps.get('DisplayName'):
+                            apps.add(registry_apps.get('DisplayName'))
+                except json.JSONDecodeError as e:
+                    self.logger.error(f"Error parsing registry apps JSON: {e}")
+
+            # 2. Add common web apps and apps that might not be in registry
+            common_apps = {
+                "WhatsApp",
+                "Messenger",
+                "Discord",
+                "Spotify",
+                "Steam",
+                "Epic Games Launcher",
+                "Google Chrome",
+                "Microsoft Edge",
+                "Firefox",
+                "One Calendar",
+                "Mobile connecté",
+                "Explorateur de fichiers"
+            }
+            apps.update(common_apps)
+
+            # 3. Check common installation paths
+            common_paths = [
+                os.path.expandvars("%LOCALAPPDATA%\\Programs"),
+                os.path.expandvars("%PROGRAMFILES%"),
+                os.path.expandvars("%PROGRAMFILES(X86)%"),
+                os.path.expandvars("%LOCALAPPDATA%\\Microsoft\\WindowsApps")
+            ]
+            
+            for path in common_paths:
+                if os.path.exists(path):
+                    try:
+                        for item in os.listdir(path):
+                            # Remove .exe, .lnk, etc. and add to apps
+                            name = os.path.splitext(item)[0]
+                            if name and not name.startswith('.'):
+                                apps.add(name)
+                    except Exception as e:
+                        self.logger.error(f"Error reading directory {path}: {e}")
+
+            # 4. Add any apps from the current config
+            try:
+                if os.path.exists('window_config.json'):
+                    with open('window_config.json', 'r', encoding='utf-8') as f:
+                        config = json.load(f)
+                        for app_data in config.values():
+                            if 'app_name' in app_data:
+                                apps.add(app_data['app_name'])
+                            if 'original_title' in app_data:
+                                apps.add(app_data['original_title'])
+            except Exception as e:
+                self.logger.error(f"Error reading config file: {e}")
+
+            # Convert to sorted list and log
+            app_list = sorted(apps)
+            self.logger.info(f"Successfully retrieved {len(app_list)} apps (including web apps and common applications)")
+            return app_list
+
+        except Exception as e:
+            self.logger.error(f"Error in enhanced app detection: {e}")
+            return sorted(apps)  # Return whatever we found before the error
 
 def main():
     app = WindowOrganizer()

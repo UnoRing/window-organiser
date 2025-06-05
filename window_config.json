@@ -31,14 +31,6 @@
         "app_name": "whatsapp",
         "original_title": "WhatsApp"
     },
-    "Messenger": {
-        "x": 4377,
-        "y": 696,
-        "width": 750,
-        "height": 703,
-        "app_name": "messenger",
-        "original_title": "Messenger"
-    },
     "Mobile connect\u00e9": {
         "x": 4377,
         "y": 696,
@@ -62,5 +54,14 @@
         "height": 696,
         "app_name": "spotify",
         "original_title": "Spotify"
+    },
+    "Messenger": {
+        "x": 4377,
+        "y": 696,
+        "width": 750,
+        "height": 703,
+        "app_name": "messenger",
+        "original_title": "Messenger",
+        "position_only": true
     }
 }
